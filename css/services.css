@@ -1,0 +1,244 @@
+/* services.css */
+
+/* Remove global body color */
+/* body { ... }  <-- delete this */
+
+/* Services Section Scoped */
+.services-home {
+    padding: 60px 0;
+    background: #fff; /* only services section white */
+    color: #000;      /* only services section text black */
+}
+
+.services-home .services-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.services-home .services-heading h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.services-home .services-heading p {
+    margin-top: 5px;
+    font-size: 1.2 rem;
+    color: #444;
+}
+
+.services-home .services-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    position: relative;
+}
+
+.services-home .service-box {
+    position: relative;
+    padding: 30px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(2, 255, 103, 0.542);
+    text-align: center;
+}
+
+.services-home .service-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    z-index: 10;
+}
+
+.services-home .service-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.services-home .service-box p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.services-home .service-box .btn {
+    padding: 12px 22px;
+    display: inline-block;
+    background: #00ff66;
+    color: #000;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* Popup scoped */
+.services-home .popup {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+}
+.services-home .popup-box {
+    background:#000000;
+    padding:30px;
+    border-radius:16px;
+    max-width:500px;
+    width:90%;
+    text-align:left;
+    position:relative;
+    color: #000;
+}
+.services-home .popup-box .close {
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:1.5rem;
+    cursor:pointer;
+    color: #000;
+}
+
+
+.services-home {
+padding: 60px 0;
+}
+
+.services-heading {
+text-align: center;
+margin-bottom: 100px;
+}
+.services-heading h1 {
+font-size: 3rem;
+font-weight: 800;
+/* margin-bottom: px; */
+}
+.services-heading p {
+margin-top: 10px;
+font-size: 1.2rem;
+color: #444;
+margin-bottom: 100px;
+}
+
+.services-grid {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+position: relative;
+}
+
+.service-box {
+position: relative;
+padding: 30px;
+border-radius: 16px;
+background: #fff;
+box-shadow: 0 0 20px rgba(0, 255, 102, 0.15);
+text-align: center;
+}
+
+.service-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    z-index: 10;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.service-avatar:hover {
+    transform: translateX(-50%) translateY(-10px) scale(1.1); /* pop up */
+    filter: drop-shadow(0 0 4px #00ff66);
+}
+
+/* Tooltip-like "Know More" text */
+.service-avatar::after {
+    content: "Know More";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #00ff66;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.service-avatar:hover::after {
+    opacity: 1;
+}
+
+
+.service-box h2 {
+font-size: 1.8rem;
+margin-bottom: 10px;
+margin-top: 60px; /* push below avatar */
+}
+.service-box p {
+color: #333;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+.service-box .btn {
+padding: 12px 22px;
+display: inline-block;
+background: #00ff66;
+color: #000;
+font-weight: 700;
+border-radius: 30px;
+text-decoration: none;
+}
+
+/* Popup */
+.popup {
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:none;
+justify-content:center;
+align-items:center;
+background: rgba(171, 171, 171, 0.6);
+z-index: 999;
+}
+.popup-box {
+background:#ffffff;
+
+padding:30px;
+border-radius:16px;
+max-width:500px;
+width:90%;
+text-align:left;
+position:relative;
+color: #000;
+}
+.popup-box .close {
+position:absolute;
+top:15px;
+right:15px;
+font-size:1.5rem;
+cursor:pointer;
+color: #000;
+}

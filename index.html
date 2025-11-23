@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS — Saksham & Shubham</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="about.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <h2 class="brand">NEXUS®</h2>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services">Services</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Previous Work</a>
+            <a href="contact.html" class="enquiry-btn">Enquiry</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- BADGE -->
+    <div class="badge">
+        <span class="dot"></span> AVAILABLE FOR WORK
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="left-person" onclick="showInfo('saksham')">
+            <img src="images/sakshampng copy.png" class="hero-img" alt="">
+            <h2 class="name">SAKSHAM JAIN</h2>
+        </div>
+        <div class="center-title">
+            <h1 class="big-text">Build Your Website Professionally</h1>
+            <!-- <h1 class="big-text">With Us </h1> -->
+            <h1 class="big-text second">Web That Speaks Your Brand</h1>
+            <h1 class="big-text third">We create websites for Businesses, Students & Institutes.
+</h1>
+
+            
+            <a href="#services-section" class="See">See Our Work</a>
+        </div>
+        <div class="right-person" onclick="showInfo('shubham')">
+            <img src="images/shubhampng copy.png" class="hero-img" alt="">
+            <h2 class="name">SHUBHAM SHARMA</h2>
+        </div>
+    </section>
+
+    <!-- POPUP INFO -->
+    <div id="popup" class="popup">
+        <div class="popup-box">
+            <span class="close" onclick="closePopup()">✖</span>
+            <h2 id="popup-name"></h2>
+            <p id="popup-details"></p>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION START -->
+    <section class="services-home" id="services-section">
+        <div class="services-heading">
+            <h1>What We Do?</h1>
+            <p>Premium services with professional quality</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-box animate">
+                <img src="images/avtar1.png" class="service-avatar" alt="Web Dev Avatar" onclick="showServiceInfo('webdev')">
+                <h2>Web Development for Businesses</h2>
+                <p>Professional, responsive and high-performance websites crafted specially to grow your business online.</p>
+                <a href="#" class="btn">Enquire Now</a>
+            </div>
+
+            <div class="service-box animate">
+                <img src="images/avtar2.png" class="service-avatar" alt="Projects Avatar" onclick="showServiceInfo('projects')">
+                <h2>Minor & Major Projects for Students</h2>
+                <p>Custom-made academic projects with clean UI, proper documentation, and deployable solutions.</p>
+                <a href="#" class="btn">Enquire Now</a>
+            </div>
+
+            <div class="service-box animate">
+                <img src="images/avatar3.png" class="service-avatar" alt="Portfolio Avatar" onclick="showServiceInfo('portfolio')">
+                <h2>Portfolio Websites</h2>
+                <p>Stand out with a sleek, modern portfolio website designed to showcase your skills professionally.</p>
+                <a href="#" class="btn">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-home" id="about-section">
+    <div class="about-heading"><h1>Who We Are?</h1>
+                                <p>Kon hai hum guys?</p></div></section>
+
+    <!-- SERVICE POPUP -->
+    <div id="service-popup" class="popup">
+        <div class="popup-box">
+            <span class="close" onclick="closeServicePopup()">✖</span>
+            <h2 id="service-popup-title"></h2>
+            <p id="service-popup-desc"></p>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script src="js/services.js"></script>
+
+    
+
+</body>
+</html>
